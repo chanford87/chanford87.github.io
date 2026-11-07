@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermann Chanford – Réseaux, sécurité et support IT</title>
+<meta name="description" content="Portfolio de Hermann Chanford : technicien IT avec 13 ans d’expérience, licence Réseaux et Sécurité, certifié ALX cybersécurité.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1e2e; --panel:#16293d; --line:#2a4058;
+  --text:#e9eef3; --muted:#9db0c2; --accent:#f2b544; --signal:#4fd1c5;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+header.top strong{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem}
+header.top nav a{color:var(--muted);text-decoration:none;margin-left:1.25rem}
+header.top nav a:hover{color:var(--text)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:700}
+.hero .role{font-size:1.25rem;color:var(--accent);margin:.75rem 0 1rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.hero p{max-width:34rem;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:.4rem;text-decoration:none;font-weight:500}
+.btn.main{background:var(--accent);color:#1b1405}
+.btn.alt{border:1px solid var(--line);color:var(--text)}
+.btn.alt:hover{border-color:var(--muted)}
+figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:1rem}
+figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"Public Sans",sans-serif;font-size:12px;fill:var(--text)}
+svg .sub{fill:var(--muted);font-size:10.5px}
+svg .box{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+svg .net{stroke:var(--muted);stroke-width:1.5;fill:none}
+svg .flow{stroke:var(--accent);stroke-width:2;fill:none}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section h2{font-size:1.9rem;margin-bottom:1.5rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem}
+.skills h3{font-size:1.15rem;margin-bottom:.5rem}
+.skills ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.25rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:1.25rem}
+.card h3{font-size:1.2rem;margin-bottom:.5rem}
+.card p{margin:.25rem 0 .9rem;color:var(--muted)}
+.tag{display:inline-block;font-size:.85rem;padding:.15rem .6rem;border-radius:2rem;border:1px solid var(--signal);color:var(--signal)}
+.tag.wip{border-color:var(--line);color:var(--muted)}
+.parcours{display:grid;gap:1.1rem}
+.parcours div{display:grid;grid-template-columns:9rem 1fr;gap:1rem}
+.parcours span{color:var(--muted)}
+.contact p{max-width:36rem;color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:48rem){
+  .hero{grid-template-columns:1fr;padding-top:1.5rem}
+  .parcours div{grid-template-columns:1fr;gap:.1rem}
+  header.top nav a:first-child{margin-left:0}
+  header.top{flex-direction:column;align-items:flex-start;gap:.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>Hermann Chanford</strong>
+    <nav aria-label="Navigation principale">
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Je protège les réseaux que je sais aussi réparer.</h1>
+        <p class="role">Réseaux, sécurité et support IT – Douala, Cameroun</p>
+        <p>Treize ans à installer, dépanner et accompagner des utilisateurs, puis une licence Réseaux et Sécurité et une certification ALX en cybersécurité. Je vise un poste d’analyste SOC, de technicien réseau ou de support sécurité.</p>
+        <div class="btns">
+          <a class="btn main" href="#projets">Voir mes projets</a>
+          <a class="btn alt" href="mailto:hermannchanford@gmail.com">Écrire un e-mail</a>
+        </div>
+      </div>
+
+      <figure>
+        <svg viewBox="0 0 360 300" role="img" aria-labelledby="t d">
+          <title id="t">Schéma du lab de segmentation réseau</title>
+          <desc id="d">Internet relié à un pare-feu, puis à un switch qui sépare le VLAN 10 des utilisateurs et le VLAN 20 des serveurs. Le VLAN 10 peut accéder au serveur PC7 du VLAN 20.</desc>
+          <rect class="box" x="130" y="10" width="100" height="36" rx="8"/>
+          <text x="180" y="33" text-anchor="middle">Internet</text>
+          <path class="net" d="M180 46v32"/>
+          <rect class="box" x="130" y="78" width="100" height="36" rx="8"/>
+          <text x="180" y="101" text-anchor="middle">Pare-feu</text>
+          <path class="net" d="M180 114v32"/>
+          <rect class="box" x="130" y="146" width="100" height="36" rx="8"/>
+          <text x="180" y="169" text-anchor="middle">Switch</text>
+          <path class="net" d="M150 182v26h-80v10M210 182v26h80v10"/>
+          <rect class="box" x="10" y="218" width="120" height="66" rx="8"/>
+          <text x="70" y="243" text-anchor="middle">VLAN 10</text>
+          <text class="sub" x="70" y="262" text-anchor="middle">Utilisateurs</text>
+          <rect class="box" x="230" y="218" width="120" height="66" rx="8" style="stroke:var(--signal)"/>
+          <text x="290" y="243" text-anchor="middle">VLAN 20</text>
+          <text class="sub" x="290" y="262" text-anchor="middle">PC7 : serveur SAGE</text>
+          <path class="flow" d="M130 251h100"/>
+          <path class="flow" d="M222 245l8 6-8 6" style="fill:none"/>
+        </svg>
+        <figcaption>Lab de segmentation réseau : les utilisateurs accèdent au serveur, chaque VLAN accède à Internet.</figcaption>
+      </figure>
+    </div>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div>
+          <h3>Réseaux</h3>
+          <ul><li>TCP/IP, DNS, HTTP/S, SMTP</li><li>VLAN et segmentation</li><li>Installation de réseaux locaux</li></ul>
+        </div>
+        <div>
+          <h3>Sécurité</h3>
+          <ul><li>Certification ALX cybersécurité</li><li>Politique d’accès entre VLAN</li><li>Parcours Network+, Security+, BTL1</li></ul>
+        </div>
+        <div>
+          <h3>Support et systèmes</h3>
+          <ul><li>Windows et Linux</li><li>Maintenance, récupération de données</li><li>Installation de SAGE SARI</li></ul>
+        </div>
+        <div>
+          <h3>En cours de pratique</h3>
+          <ul><li>SIEM : Wazuh</li><li>Scan de vulnérabilités : OpenVAS</li><li>Triage d’alertes et tickets</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>Segmentation réseau par VLAN</h3>
+          <p>Lab réalisé pour mon stage de licence : séparation des utilisateurs et des serveurs, avec une politique d’accès entre VLAN. Proposé comme amélioration à l’entreprise.</p>
+          <span class="tag">Réalisé</span>
+        </article>
+        <article class="card">
+          <h3>Mini-SOC avec Wazuh</h3>
+          <p>Collecte de logs Windows, simulation d’attaques, triage des alertes et rédaction de tickets d’incident.</p>
+          <span class="tag wip">En cours</span>
+        </article>
+        <article class="card">
+          <h3>Scan de vulnérabilités avec OpenVAS</h3>
+          <p>Scan d’une machine de test, qualification des vulnérabilités et tableau de couverture des protections.</p>
+          <span class="tag wip">En cours</span>
+        </article>
+      </div>
+      <p><a href="https://github.com/chanford87">Tous mes dépôts sur GitHub</a></p>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="parcours">
+        <div><span>2026</span><p>Licence Réseaux et Sécurité, Institut Universitaire des Leaders. Certification ALX en cybersécurité.</p></div>
+        <div><span>2023 – 2024</span><p>BTS en Informatique industrielle et automatisme.</p></div>
+        <div><span>Depuis 2014</span><p>Chef d’équipe de production chez New Foods, 25 personnes : rigueur, procédures et travail sous pression.</p></div>
+        <div><span>Depuis 2012</span><p>Technicien support informatique freelance à Douala : SAGE SARI installé chez plus de 30 clients, données récupérées pour plus de 50 clients.</p></div>
+        <div><span>2012 – 2014</span><p>Technicien SAV chez GIGACOM Informatique.</p></div>
+        <div><span>2011</span><p>Certificat en Maintenance des Systèmes Informatiques, CFPC De La Salle, Douala.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Me contacter</h2>
+      <p>Disponible pour un poste en réseaux, support ou sécurité, et pour des missions freelance à Douala et à distance.</p>
+      <div class="btns">
+        <a class="btn main" href="mailto:hermannchanford@gmail.com">hermannchanford@gmail.com</a>
+        <a class="btn alt" href="https://www.linkedin.com/in/hermann-chanford-ngouokap">Profil LinkedIn</a>
+        <a class="btn alt" href="https://github.com/chanford87">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Hermann Chanford. Douala, Cameroun.</footer>
+</div>
+</body>
+</html>
